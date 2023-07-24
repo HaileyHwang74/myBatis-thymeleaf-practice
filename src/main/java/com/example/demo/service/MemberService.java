@@ -18,7 +18,7 @@ public class MemberService {
 	private final MemberMapper memberMapper;
 
 	public List<Member> getAllUsers() {
-		return memberMapper.getAllMembers();
+		return memberMapper.findAll();
 	}
 
 }

@@ -8,6 +8,6 @@ import com.example.demo.dto.Member;
 
 @Mapper
 public interface MemberMapper {
-	List<Member> getAllMembers();
-	
+	List<Member> findAll();
+
 }
