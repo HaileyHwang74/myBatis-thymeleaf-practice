@@ -23,7 +23,7 @@ public class MyBatisConfig {
 
         // Set the location of the mapper.xml files
         factoryBean.setMapperLocations(new PathMatchingResourcePatternResolver()
-                .getResources("classpath*:com/example/demo/mappers/*.xml"));
+                .getResources("classpath:mappers/*.xml"));
 
         return factoryBean.getObject();
     }

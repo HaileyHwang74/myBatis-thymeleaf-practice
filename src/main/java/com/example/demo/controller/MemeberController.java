@@ -19,9 +19,9 @@ public class MemeberController {
 
 
     @GetMapping("/")
-    public String getMemberList(Model model) {
+    public List<Member> getMemberList(Model model) {
         List<Member> members = memberService.getAllUsers();
         model.addAttribute("members", members);
-        return "index";
+        return members;
     }
 }
