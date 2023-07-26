@@ -4,5 +4,4 @@
 	<select id="findAll" resultType="map">
        select * from Member
     </select>
- 
 </mapper>
